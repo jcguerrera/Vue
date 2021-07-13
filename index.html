@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Curriculum Juan Camilo Guerrero" content="Hoja de vida juan camilo guerrero alracon, universidad EAFIT">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container" id="app">
+        
+        <div class="lateral">
+            <div class="profile-image">
+                <img src="Juan.JPG" alt="">
+            </div>
+            <div class="contact">
+                <h3>{{data.data.titles.contact[0]}}</h3>
+                    <ul>
+                        <li>
+                            <span class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                            <span class="text" >{{data.data.contact.email}}</span>
+                        </li>
+                        <li>
+                            <span class="icon"><i class="fa fa-instagram" aria-hidden="true"></i></span>
+                            <a href="https://www.instagram.com/jcamilo__22/"><span class="text">{{data.data.contact.instagram}}</span></a>
+                        </li>
+                        <li>
+                            <span class="icon"><i class="fa fa-phone" aria-hidden="true"></i></i></span>
+                            <span class="text">{{data.data.contact.phone}}</span>
+                        </li>
+                        <li>
+                            <span class="icon"><i class="fa fa-github" aria-hidden="true"></i></i></span>
+                            <a href="https://github.com/jcguerrera"><span class="text">{{data.data.contact.github}}</span></a>
+                        </li>
+                        <li>
+                            <span class="icon"><i class="fa fa-linkedin" aria-hidden="true"></i></span>
+                            <a href="https://www.linkedin.com/in/juan-camilo-guerrero-alarc%C3%B3n-93b716206"><span class="text">{{data.data.contact.linkedIn}}</span></a>
+                        </li>
+                        <li>
+                            <span class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                            <span class="text">{{data.data.contact.location}}</span>
+                        </li>
+                    </ul>
+            </div>
+            <div class="contact">
+                <h3>{{data.data.titles.personal_referencies}}</h3>
+                <ul>
+                    <li class="personal-referencies">
+                        <span class="text"> {{data.data.referencies.names[0]}}</span><br>
+                        <span class="text"> {{data.data.referencies.position[0]}} </span><br>
+                        <span class="text"> {{data.data.referencies.names[0]}}</span><br>
+                    </li>
+                    <li class="personal-referencies"> 
+                        <span class="text"> {{data.data.referencies.names[1]}}</span><br>
+                        <span class="text">{{data.data.referencies.position[1]}} </span><br>
+                        <span class="text"> {{data.data.referencies.names[1]}}</span><br>
+                    </li>
+                </ul>
+            </div>
+            <div class="contact">
+                <h3>{{data.data.titles.contact[1]}}</h3>
+                <form id="my-form" action="https://formspree.io/f/xzbyglog" method="POST" jc-validation>
+                    <input type="email" name="email" placeholder="Email"/><br><br>
+                    <input type="text" name="message" placeholder="Mensaje"/><br><br>
+                    <br>
+                    <button id="my-form-button">{{data.data.titles.send}}</button>
+                    <p id="my-form-status"></p>
+                </form>
+                <a name="contact-me"></a>
+            <!-- Place this script at the end of the body tag -->
+            <script src="app.js"></script>
+            
+            </div>
+
+        </div>
+        <div class="content">
+            <header class="name">
+                <h1><strong>{{data.data.titles.send}}</strong></h1>
+                <span>{{data.data.titles.position}}</span>
+                <a href="#contact-me"><h4>Contacto</h4></a>
+            </header>
+            <div class="box">
+                <div class="resume">
+                    <h3>{{data.data.titles.resume}}</h3>
+                    <p>{{data.data.skills.resume}}</p>
+                </div>
+                <div class="skills">
+                    <h3>{{data.data.titles.skills}}</h3>
+                    <ul>
+                        <li>
+                            <span>{{data.data.skills.tools[0]}}</span>
+                            <span class="percent">
+                                <div style="width: 80%;"></div>
+                            </span>
+                        </li>
+                        <li>
+                            <span>{{data.data.skills.tools[1]}}</span>
+                            <span class="percent">
+                                <div style="width: 60%;"></div>
+                            </span>
+                        </li>
+                        <li>
+                            <span>{{data.data.skills.tools[2]}}</span>
+                            <span class="percent">
+                                <div style="width: 70%;"></div>
+                            </span>
+                        </li>
+                        <li>
+                            <span>{{data.data.skills.tools[3]}}</span>
+                            <span class="percent">
+                                <div style="width: 75%;"></div>
+                            </span>
+                        </li>
+                        <li>
+                            <span>{{data.data.skills.tools[4]}}</span>
+                            <span class="percent">
+                                <div style="width: 75%;"></div>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="school">
+                <h3 >{{data.data.titles.education}}</h3>
+                <div class="square">
+                    <div class="year">
+                        <h4>{{data.data.education.year.eafit}}</h4>
+                        <h4>{{data.data.education.academy[0]}}</h4>
+                    </div>
+                    <div class="text">
+                        <p>{{data.data.education.description.eafit}}</p>
+                    </div>
+                </div>
+                <div class="square">
+                    <div class="year">
+                        <h4>{{data.data.education.year.platzi}}</h4>
+                        <h4>{{data.data.education.academy[2]}}</h4>
+                    </div>
+                    <div class="text">
+                        <p>{{data.data.education.description.platzi}}</p>
+                    </div>
+                </div>
+                <div class="square">
+                    <div class="year">
+                        <h4>{{data.data.education.year.udemy}}</h4>
+                        <h4>{{data.data.education.academy[1]}}</h4>
+                    </div>
+                    <div class="text">
+                        <p>{{data.data.education.description.udemy[0]}}</p>
+                        <p>{{data.data.education.description.udemy[1]}}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="lang">
+                
+                <h3>{{data.data.titles.lang}}</h3>
+                <ul>
+                    <li>
+                        <span>{{data.data.education.languages[1]}}</span>
+                        <span class="percent">
+                            <div style="width: 70%;"></div>
+                        </span>
+                    </li>
+                    <li>
+                        <span>{{data.data.education.languages[0]}}</span>
+                        <span class="percent">
+                            <div style="width: 95%;"></div>
+                        </span>
+                    </li>
+                </ul>
+                
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="./dist/index_bundle.js"></script>
+</body>
+</html>

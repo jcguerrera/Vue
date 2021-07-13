@@ -1,0 +1,46 @@
+{
+    "data":{
+        "titles": {
+            "contact": ["Datos de Contacto","Contactame"],
+            "personal_referencies": "Referencias Personales",
+            "name": "Juan Camilo Guerrero",
+            "position": "Front End Developer",
+            "resume": "Resumen",
+            "skills": "Habilidades",
+            "send": "Enviar",
+            "education": "Formacion Academica",
+            "lang": "Idiomas"
+        },
+        "contact":{
+            "email": "jcguerrero@playvox.com",
+            "instagram": "jcamilo__22",
+            "phone": "+57 3102271083",
+            "github": "jcguerrera",
+            "linkedIn": "Juan Camilo Guerrero",
+            "location": "Boyaca, Colombia"
+        },
+        "referencies": {
+            "names": ["Cesar Garcia", "Daniel Gomez"],
+            "position": ["Front End Developer Talos", "Data Analist Bancolombia"],
+            "email": ["cagarciap@eafit.edu.co", "dfgomezm@eafit.edu.co"]
+        },
+        "skills":{
+            "resume": "Hola! Soy Juan Camilo Guerrero Alarcon, estudiante de la Universidad EAFIT (Medellin),cuento con conocimientos en python PHP(Laravel) y herramientas de HTML & CSS, Interesado en aprender cada dia nuevas tecnologias o afines para mejorar mis habilidades de desarrollador web, ademas suelo trabajar en grupo para lograr una mejor experiencia de trabajo ",
+            "tools": ["Python", "Laravel", "Django", "HTML & CSS", "PHP"]
+        },
+        "education":{
+            "academy": ["Universidad EAFIT", "Udemy", "Platzi"],
+            "year":{
+                "eafit": "2018 - Cursando",
+                "platzi": "2020",
+                "udemy": "2021"
+            },
+            "description":{
+                "eafit": "Pregrado Ingenieria de Sistemas",
+                "platzi": "Certificado HTML & CSS",
+                "udemy":["Procesamiento Lenguaje Natural con Python","Introduccion a Machine Learning y Data Science"]
+            },
+            "languages": ["Español","Ingles"]
+        }
+    }
+}
